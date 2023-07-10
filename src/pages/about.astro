@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout
+  title='About | Justine Gichana'
+  description="Hello there! I'm Justine Gichana, a Fullstack Web Developer with expertise in React, Next.js, and Node.js. With over 2 years of web dev experience in react and nodejs, I have successfully delivered 2 exceptional exceptional web applications that meet clients' needs and exceed expectations.">
+  <div class='stack gap-20'>
+    <main class='wrapper about'>
+      <Hero
+        title='About'
+        tagline='Thanks for stopping by. Read below to learn more about myself and my background.'>
+        <!-- <img
+          width='1553'
+          height='873'
+          src='/assets/at-work.jpg'
+          alt='Justine Gichana'
+        /> -->
+      </Hero>
+
+      <section>
+        <h2 class='section-title'>Background</h2>
+        <div class='content'>
+          <h3 class='mb-4'>Justine Gichana</h3>
+          <p class='mb-4'>
+            Fullstack Web Developer | React | Next.js | Node.js
+          </p>
+
+          <p class='mb-4'>
+            🌟 Skilled Fullstack Web Developer specializing in React, Next.js,
+            and Node.js
+          </p>
+          <p class='mb-4'>
+            🎓 BSc Degree from the University of Nairobi (Graduated December
+            2021)
+          </p>
+
+          <p class='mb-4'>
+            💼 Seeking new employment opportunities to contribute my expertise
+          </p>
+         
+
+          <p class='mb-4'>
+            Hello there! I'm Justine Gichana, a Fullstack Web Developer with
+            expertise in React, Next.js, and Node.js. With over 2 years of web
+            dev experience in react and nodejs, I have successfully delivered 2
+            exceptional web applications that meet clients' needs and exceed
+            expectations.
+          </p>
+
+          <p class='mb-4'>🔍 Currently Seeking New Employment Opportunities:</p>
+          <p class='mb-4'>
+            I am actively seeking new employment opportunities where I can
+            contribute my skills and expertise. If you're looking for a
+            dedicated and versatile Fullstack Web Developer to join your team,
+            let's connect!
+          </p>
+
+          <p class='mb-4'>💻 Technical Skills:</p>
+          <ul class='mb-4'>
+            <li>Frontend: React, Next.js, JavaScript, HTML, CSS</li>
+            <li>Backend: Node.js, Express.js, MongoDB</li>
+            <li>Tools: Git, npm, Parcel, Babel</li>
+          </ul>
+
+          <p class='mb-4'>
+            🏆 If you're looking for a dedicated Fullstack Web Developer to
+            contribute to your team or project, let's connect!
+          </p>
+
+          <p class='mb-4'>
+            I'm passionate about creating exceptional web solutions and I'm
+            eager to bring my skills and experience to a new challenge. Let's
+            discuss how I can contribute to your organization's success.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <ContactCTA />
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
+
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
+
+  .content {
+    grid-column: 2 / 4;
+  }
+
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
+
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
+
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
+</style>
