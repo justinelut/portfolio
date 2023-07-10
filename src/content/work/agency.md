@@ -12,9 +12,6 @@ tags:
   - Tailwindcss
 ---
 
-## Level-two heading
-
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
 
 This project represents a significant milestone in my journey as a web developer. With attention to detail and a passion for creating great user experiences, I designed and built verixr (the service) agency website from the ground up.
 
