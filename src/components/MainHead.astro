@@ -8,7 +8,7 @@ interface Props {
 
 const {
 	title = 'Justine Gichana: Personal Site',
-	description = 'The personal site of Justine Gichana',
+	description = 'I am a Fullstack Web Developer with expertise in React, Next.js, and Node.js.',
 } = Astro.props;
 ---
 
@@ -16,6 +16,9 @@ const {
 <meta name="description" property="og:description" content={description} />
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
+<meta property="og:title" content="Justine Gichana: Personal Site" />
+<meta property="og:description" content="I am a Fullstack Web Developer with expertise in React, Next.js, and Node.js." />
+<meta property="og:image" content="/portrait.jpg" />
 <title>{title}</title>
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
