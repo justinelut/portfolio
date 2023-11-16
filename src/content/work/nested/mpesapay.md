@@ -3,7 +3,7 @@ title: Mpesa Pay Javascript Sdk
 publishDate: 2023-07-10 16:00:00
 img: /assets/mpesapay.png
 img_alt: MpesaPay Javascript Sdk
-link: https://mpesapay.verixr.com
+link: https://mpesapay.pixelayout.site
 description: |
   A JavaScript library that enables developers to easily integrate Mpesa payments into their Node.js, Next.js, SvelteKit, and Nuxt.js applications.
 tags:
